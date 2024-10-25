@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Her Power Project Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  </head>
+<body>
+  
+    <!-- navigation bar -->
+    <header class="bg-gray-900 mx-16 text-white shadow-md z-[1000] top-0 sticky">
+      <div class="container mx-auto flex items-center justify-between py-4 px-6">
+        <div class="logo flex items-center">
+          <img src="./images/logo.png" alt="Logo" class="h-10">
+          <span class="ml-3 text-2xl font-bold">Her Power Project</span>
+        </div>
+        <!-- Menu (Center) -->
+        <nav class=" hidden md:flex space-x-8 text-lg font-medium">
+          <a href="#home" class="hover:text-purple-400 transition duration-300">Home</a>
+          <a href="#about" class="hover:text-purple-400 transition duration-300">About Us</a>
+          <a href="#service" class="hover:text-purple-400 transition duration-300">Services</a>
+          <a href="#contact" class="hover:text-purple-400 transition duration-300">Contact</a>
+        </nav>
+        <!-- Envelope Icon  -->
+        <div class="hidden md:flex items-center space-x-3">
+          <a href="#contact" class="text-xl hover:text-purple-400 transition duration-300">
+            <i class='bx bx-envelope h-7 w-7" fill="none text-[orangered] text-[35px] hover:scale-[0.9]'></i>
+          </a>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="focus:outline-none text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <nav class="flex flex-col items-center space-y-6 bg-gray-800 py-4">
+          <a href="#home" class="text-lg hover:text-purple-400 transition duration-300">Home</a>
+          <a href="#about" class="text-lg hover:text-purple-400 transition duration-300">About Us</a>
+          <a href="#service" class="text-lg hover:text-purple-400 transition duration-300">Services</a>
+          <a href="#contact" class="text-lg hover:text-purple-400 transition duration-300">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- side menu -->
+    <!-- <section class="side-menu ">
+      <ul class="block bg-transparent bg-none mt-16 fixed z-50">
+        <li style="--clr:#2483ff;">
+          <a href="#home">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li style="--clr:#fff200;">
+          <a href="#contact">
+            <i class="fa-solid fa-user"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+        <li style="--clr:#ff253f;">
+          <a href="#about">
+            <i class='bx bxs-info-circle'></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li style="--clr:#25d366;">
+          <a href="#service">
+            <i class='bx bxs-wrench'></i>
+            <span>Service</span>
+          </a>
+        </li>
+        <li style="--clr:#f32ec8;">
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </a>
+        </li>
+      </ul>
+    </section> -->
+    <!-- Hero area section -->
+    <section class="home mx-16 bg-gradient-to-b from-gray-900 to-black text-white py-20 relative overflow-hidden" id="home">
+      <!-- Background Animation -->
+      <div class="absolute inset-0 bg-opacity-25 bg-[url('https://example.com/path-to-image.jpg')] bg-cover bg-center z-0"></div>
+    
+      <!-- Floating Elements Animation -->
+      <div class="absolute top-0 left-0 w-16 h-16 bg-pink-600 rounded-full animate-float-slow"></div>
+      <div class="absolute bottom-0 right-0 w-20 h-20 bg-pink-500 rounded-full animate-float-slow delay-1500"></div>
+      
+      <div class="container mx-auto text-center relative z-10">
+        <h1 class="text-5xl font-extrabold mb-6 tracking-tight leading-snug animate-fade-in-down">Empowering Women in Bangladesh</h1>
+        <p class="text-lg mb-8 opacity-90 animate-fade-in-up delay-1000">
+          Join us to help women succeed in freelancing with training, resources, and mentorship.
+        </p>
+        <a href="#services" class="bg-pink-600 hover:bg-pink-500 text-white py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out animate-bounce">
+          Learn More
+        </a>
+      </div>
+    
+      <!-- jQuery for Additional Effects -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          // Fade in effect for the main content
+          $('.home .container').css({ opacity: 0, transform: 'translateY(20px)' });
+          $('.home .container').animate({
+            opacity: 1,
+            transform: 'translateY(0)'
+          }, 800);
+    
+          // Hover effect for buttons
+          $('.bg-pink-600').hover(
+            function() {
+              $(this).css('box-shadow', '0 10px 20px rgba(255, 105, 180, 0.5)');
+            },
+            function() {
+              $(this).css('box-shadow', 'none');
+            }
+          );
+        });
+      </script>
+    
+      <style>
+        /* Keyframes for Fade In Effects */
+        @keyframes fade-in-up {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        @keyframes fade-in-down {
+          0% {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        /* Floating Animation */
+        @keyframes float-slow {
+          0% {
+            transform: translatey(0px);
+          }
+          50% {
+            transform: translatey(-10px);
+          }
+          100% {
+            transform: translatey(0px);
+          }
+        }
+    
+        .animate-float-slow {
+          animation: float-slow 4s ease-in-out infinite;
+        }
+    
+        .animate-fade-in-up {
+          animation: fade-in-up 1s forwards;
+        }
+    
+        .animate-fade-in-down {
+          animation: fade-in-down 1s forwards;
+        }
+      </style>
+    </section>
+    
+    <!-- service section -->
+    <section id="service" class="service py-16 mx-16 bg-gradient-to-b from-black to-gray-900 text-white relative overflow-hidden">
+      <div class="container mx-auto px-6 relative z-10">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 animate-text">Our Services</h2>
+    
+        <div class="flex flex-wrap justify-center gap-8">
+          <div class="w-full md:w-1/3 px-4 text-center service-card">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
+              <img src="./images/laptop destribution.jpeg" alt="Laptop Distribution" class="mx-auto h-60 mb-6 rounded-lg shadow-md transition-transform duration-500 transform hover:scale-110">
+              <h3 class="text-2xl font-semibold mb-4 text-pink-400">Laptop Distribution</h3>
+              <p class="text-gray-300">Providing laptops to women in rural areas to kickstart their freelancing journey.</p>
+            </div>
+          </div>
+    
+          <div class="w-full md:w-1/3 px-4 text-center service-card">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
+              <img src="./images/trainig programs.jpeg" alt="Training Programs" class="mx-auto h-60 mb-6 rounded-lg shadow-md transition-transform duration-500 transform hover:scale-110">
+              <h3 class="text-2xl font-semibold mb-4 text-purple-400">Training Programs</h3>
+              <p class="text-gray-300">Offering web development, graphic design, and digital marketing training.</p>
+            </div>
+          </div>
+    
+          <div class="w-full md:w-1/3 px-4 text-center service-card">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
+              <img src="./images/freelancing support.jpeg" alt="Freelancing Support" class="mx-auto h-60 mb-6 rounded-lg shadow-md transition-transform duration-500 transform hover:scale-110">
+              <h3 class="text-2xl font-semibold mb-4 text-blue-400">Freelancing Support</h3>
+              <p class="text-gray-300">Providing continuous support to help women thrive in freelancing careers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- jQuery for Animations -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          // Fade in effect for the service section
+          $('.service').css({ opacity: 0, transform: 'translateY(20px)' });
+          $('.service').animate({
+            opacity: 1,
+            transform: 'translateY(0)'
+          }, 800);
+    
+          // Fade in effect for each service card
+          $('.service-card').css({ opacity: 0, transform: 'translateY(20px)' });
+          $('.service-card').each(function(index) {
+            $(this).delay(200 * index).animate({
+              opacity: 1,
+              transform: 'translateY(0)'
+            }, 800);
+          });
+        });
+      </script>
+    
+      <style>
+        /* Keyframes for Fade In Effects */
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        .service-card {
+          animation: fade-in 0.8s forwards;
+        }
+      </style>
+    </section>
+    
+    <section id="about" class="animated-background py-20 mx-16 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden">
+    
+      <div class="container mx-auto text-center relative z-10">
+        <h2 class="text-5xl font-extrabold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 animate-text">Meet Our Teachers</h2>
+        <p class="text-lg text-gray-300 mb-8">Our dedicated instructors help students build the skills they need for success.</p>
+    
+        <!-- Teacher Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- Teacher 1: MD. Rafiqul Islam -->
+          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-3 relative group">
+            <img src="./images/rafiq sir.png" alt="MD. Rafiqul Islam" class="mx-auto h-64 object-cover rounded-t-lg transition duration-500 transform group-hover:scale-105">
+            <div class="p-6 text-center">
+              <h3 class="text-2xl font-bold mb-2 text-purple-400">MD. Rafiqul Islam</h3>
+              <p class="text-gray-400 text-sm mb-4">Web Development & Skill Development</p>
+              <p class="text-gray-300">"Specializing in skill development and web development, Rafiqul sir helps students gain practical knowledge for freelancing."</p>
+            </div>
+          </div>
+          
+          <!-- Teacher 2: Firoj Ahmed Hridoy -->
+          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-3 relative group">
+            <img src="./images/firoj sir.png" alt="Firoj Ahmed Hridoy" class="mx-auto h-64 object-cover rounded-t-lg transition duration-500 transform group-hover:scale-105">
+            <div class="p-6 text-center">
+              <h3 class="text-2xl font-bold mb-2 text-pink-400">Firoj Ahmed Hridoy</h3>
+              <p class="text-gray-400 text-sm mb-4">English Instructor</p>
+              <p class="text-gray-300">"Firoj sir teaches English language skills, helping students improve their communication for international freelancing opportunities."</p>
+            </div>
+          </div>
+    
+          <!-- Teacher 3: Shupto -->
+          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-3 relative group">
+            <img src="./images/shupto sir.png" alt="Shupto" class="mx-auto h-64  object-cover rounded-t-lg transition duration-500 transform group-hover:scale-105">
+            <div class="p-6 text-center">
+              <h3 class="text-2xl font-bold mb-2 text-blue-400">Tonmoy Shupto</h3>
+              <p class="text-gray-400 text-sm mb-4">Coordinator</p>
+              <p class="text-gray-300">"Shupto Sir, our dedicated coordinator, empowers students, supports women in Bangladesh, and transforms lives through the Her Power Project."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Web Development Section -->
+    <section class="animated-background py-16 bg-gradient-to-b mx-16 from-gray-900 to-gray-800 relative overflow-hidden">
+    
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Section Title -->
+        <div class="text-center">
+          <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Web Development</h2>
+          <p class="mt-2 text-3xl leading-8 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 sm:text-4xl animate-text">Building with the Latest Tools</p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-400 lg:mx-auto">Explore modern web development technologies and frameworks to create responsive and scalable websites.</p>
+        </div>
+    
+        <!-- Cards -->
+        <div class="mt-12 grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+          <!-- Card 1 -->
+          <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:bg-gray-700 relative group">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-indigo-400 group-hover:text-white">HTML & CSS</h3>
+              <p class="mt-4 text-base text-gray-300 group-hover:text-gray-200">Learn the building blocks of the web. Structure with HTML and style with CSS to create beautiful, responsive websites.</p>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:bg-gray-700 relative group">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-indigo-400 group-hover:text-white">JavaScript</h3>
+              <p class="mt-4 text-base text-gray-300 group-hover:text-gray-200">Bring your sites to life with dynamic content and interactivity using JavaScript, the language of the web.</p>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:bg-gray-700 relative group">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-indigo-400 group-hover:text-white">Tailwind CSS</h3>
+              <p class="mt-4 text-base text-gray-300 group-hover:text-gray-200">Leverage utility-first CSS to rapidly build modern websites with highly customizable and responsive designs.</p>
+            </div>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:bg-gray-700 relative group">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-indigo-400 group-hover:text-white">Bootstrap</h3>
+              <p class="mt-4 text-base text-gray-300 group-hover:text-gray-200">Quickly design and customize responsive mobile-first websites with Bootstrap, one of the most popular front-end toolkits.</p>
+            </div>
+          </div>
+    
+          <!-- Card 5 -->
+          <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:bg-gray-700 relative group">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-indigo-400 group-hover:text-white">React.js</h3>
+              <p class="mt-4 text-base text-gray-300 group-hover:text-gray-200">Learn how to create reusable UI components and manage application state with React.js, a JavaScript library.</p>
+            </div>
+          </div>
+    
+          <!-- Card 6 -->
+          <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition duration-500 transform hover:-translate-y-2 hover:bg-gray-700 relative group">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-2 text-indigo-400 group-hover:text-white">Node.js & Express</h3>
+              <p class="mt-4 text-base text-gray-300 group-hover:text-gray-200">Build fast and scalable server-side applications using Node.js and Express, a popular backend framework.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial and success section -->
+    <section class="py-16 mx-16 bg-[#111111] relative overflow-hidden">
+      
+      <div class="container mx-auto text-center relative z-10">
+        <h2 class="text-4xl text-yellow-50 font-bold mb-12">Success Stories</h2>
+      </div>
+      
+      <!-- Fatema's Testimonial -->
+      <div class="review-content grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center mt-8 container mx-auto">
+        <!-- Fatema's Box -->
+        <div class="box p-[35px] bg-[#212121] rounded-[3rem] hover:bg-[#2e2e2e] transition-all duration-300 ease-in-out">
+          <p class="text-[#9e9e9e] text-[1.1rem] leading-[30px] mt-[1.5rem]">"Thanks to Her Power Project, I hope I will earn a stable income through freelancing."</p>
+          <div class="in-box flex items-center gap-[30px] mt-6">
+            <div class="bx-img">
+              <img src="./images/fatema.png" class=" h-40 " alt="Fatema">
+            </div>
+            <div class="bxx-text">
+              <h4 class="m-0 text-[18px] text-white">- Fatema, Madaripur</h4>
+              <h5 class="text-[#9e9e9e] text-[14px] font-[500] tracking-[1px] mt-[10px]">Web Developer</h5>
+              <div class="ratings flex mt-2">
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Mithu's Box -->
+        <div class="box p-[35px] bg-[#212121] rounded-[3rem] hover:bg-[#2e2e2e] transition-all duration-300 ease-in-out">
+          <p class="text-[#9e9e9e] text-[1.1rem] leading-[30px] mt-[1.5rem]">"The laptop and training changed my life. Now I hope I will support my family financially."</p>
+          <div class="in-box flex items-center gap-[30px] mt-6">
+            <div class="bx-img">
+              <img src="./images/Mitu Akter.png" class="h-40 " alt="Mithu Akter">
+            </div>
+            <div class="bxx-text">
+              <h4 class="m-0 text-[18px] text-white">Mithu Akter</h4>
+              <h5 class="text-[#9e9e9e] text-[14px] font-[500] tracking-[1px] mt-[10px]">Web Developer</h5>
+              <div class="ratings flex mt-2">
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Nusrat's Box -->
+        <div class="box p-[35px] bg-[#212121] rounded-[3rem] hover:bg-[#2e2e2e] transition-all duration-300 ease-in-out">
+          <p class="text-[#9e9e9e] text-[1.1rem] leading-[30px] mt-[1.5rem]">"The laptop and training changed my life. Now I hope I will support my family financially."</p>
+          <div class="in-box flex items-center gap-[30px] mt-6">
+            <div class="bx-img">
+              <img src="./images/Nusrat.png" class="h-40 " alt="Nusrat Jahan">
+            </div>
+            <div class="bxx-text">
+              <h4 class="m-0 text-[18px] text-white">Nusrat Jahan</h4>
+              <h5 class="text-[#9e9e9e] text-[14px] font-[500] tracking-[1px] mt-[10px]">Web Developer</h5>
+              <div class="ratings flex mt-2">
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+                <i class='bx bxs-star text-[#ff9f0d] text-[18px] mr-[5px]'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+    <!-- Memorable Moments Section -->
+    <section class="bg-gray-800 mx-8 lg:mx-16 text-white py-12 px-6 rounded-lg shadow-lg">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold mb-4 transition-transform transform hover:scale-105">
+          "Memorable Moments"
+        </h1>
+        <p class="text-lg italic">
+          Cherishing the moments that bring us together.
+        </p>
+      </div>
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105">
+          <img class="w-24 h-24 mx-auto rounded-full border-4 border-gray-600" src="./images/memorable eating.jpeg" alt="Gathering">
+          <p class="mt-4 italic">
+            A memorable moment was gathering with fellow teachers, sharing a meal, laughter, and stories. It celebrated teamwork, camaraderie, and reminded us of the value of unity.
+          </p>
+          <p class="mt-4 font-bold">
+            - "A Day of Togetherness and Celebration"
+          </p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105">
+          <img class="w-24 h-24 mx-auto rounded-full border-4 border-gray-600" src="./images/laptop.jpeg" alt="Technology Empowerment">
+          <p class="mt-4 italic">
+            A memorable moment was receiving laptops from the Her Power project, symbolizing empowerment, growth, and new opportunities to enhance collaboration, teaching, and our daily work.
+          </p>
+          <p class="mt-4 font-bold">
+            - "Empowered with Technology: A Day to Remember"
+          </p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105">
+          <img class="w-24 h-24 mx-auto rounded-full border-4 border-gray-600" src="./images/memorable eating.jpeg" alt="Gathering">
+          <p class="mt-4 italic">
+            A memorable moment was gathering with fellow teachers, sharing a meal, laughter, and stories. It celebrated teamwork, camaraderie, and reminded us of the value of unity.
+          </p>
+          <p class="mt-4 font-bold">
+            - "A Day of Togetherness and Celebration"
+          </p>
+        </div>
+      </div>
+      <!-- grid close -->
+      <!-- Testimonial 4 -->
+      <div class="bg-gray-700 p-6 w-full md:w-1/3 mx-auto mt-10 rounded-lg shadow-md text-center hidden md:block transition-transform transform hover:scale-105">
+        <img class="w-24 h-24 mx-auto rounded-full border-4 border-gray-600" src="./images/laptop.jpeg" alt="Technology Empowerment">
+        <p class="mt-4 italic">
+          A memorable moment was receiving laptops from the Her Power project, symbolizing empowerment, growth, and new opportunities to enhance collaboration, teaching, and our daily work.
+        </p>
+        <p class="mt-4 font-bold">
+          - "Empowered with Technology: A Day to Remember"
+        </p>
+      </div>
+    </section>
+    
+    <!-- faq section -->
+    <section id="faq" class="py-16 bg-gray-900 text-white mx-4 lg:mx-16 rounded-lg shadow-lg">
+       <!-- Floating Background Bubbles -->
+       <div class="absolute inset-0 z-0 pointer-events-none">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      <div class="container mx-auto px-4 mb-8">
+        <h2 class="text-4xl font-bold text-center mb-6 transition-transform transform hover:scale-105">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-center text-lg italic mb-6">
+          Your questions, answered!
+        </p>
+      </div>
+      <div class="space-y-4">
+        <div class="collapse collapse-arrow bg-gray-800 rounded-lg">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium p-4 hover:bg-gray-700 transition-colors">
+            How can I join the training programs?
+          </div>
+          <div class="collapse-content p-4">
+            <p>You can join by filling out our registration form, and we will reach out to you with the details.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-gray-700 rounded-lg">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium p-4 hover:bg-gray-600 transition-colors">
+            Is the laptop distribution free?
+          </div>
+          <div class="collapse-content p-4">
+            <p>Yes, the laptops are provided free of cost to eligible women as part of our empowerment initiative.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-gray-800 rounded-lg">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium p-4 hover:bg-gray-700 transition-colors">
+            Do you offer job placement assistance?
+          </div>
+          <div class="collapse-content p-4">
+            <p>Yes, after completing our courses, we offer guidance on freelancing platforms to help women secure jobs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- partnar section -->
+    <section id="partners" class="py-16 bg-gray-900 mx-16 text-white relative overflow-hidden">
+      <!-- Floating Background Bubbles -->
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      
+      <div class="container mx-auto text-center relative z-10">
+        <h2 class="text-4xl font-bold mb-12 animate-fade-in">Our Partners</h2>
+        <div class="flex justify-center space-x-8">
+          <img src="./images/images (2).png" alt="Partner 1" class="h-16 partner-logo animate-fade-in" />
+          <img src="./images/images (2).png" alt="Partner 2" class="h-16 partner-logo animate-fade-in" />
+          <img src="./images/images (2).png" alt="Partner 3" class="h-16 partner-logo animate-fade-in" />
+        </div>
+      </div>
+    
+      <!-- jQuery for Animations -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          // Fade in effect for the partners section
+          $('#partners').css({ opacity: 0, transform: 'translateY(20px)' });
+          $('#partners').animate({
+            opacity: 1,
+            transform: 'translateY(0)'
+          }, 800);
+    
+          // Fade in effect for each partner logo
+          $('.partner-logo').css({ opacity: 0, transform: 'translateY(20px)' });
+          $('.partner-logo').each(function(index) {
+            $(this).delay(200 * index).animate({
+              opacity: 1,
+              transform: 'translateY(0)'
+            }, 800);
+          });
+        });
+      </script>
+    
+      <style>
+        /* Keyframes for Fade In Effects */
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        .animate-fade-in {
+          animation: fade-in 0.8s forwards;
+        }
+    
+        .partner-logo {
+          transition: transform 0.3s;
+        }
+    
+        .partner-logo:hover {
+          transform: scale(1.1);
+        }
+      </style>
+    </section>
+    
+    <!-- Newsletter Subscription Section -->
+    <section id="newsletter" class="py-16 mx-16 bg-gradient-to-b from-gray-800 to-black text-white">
+       <!-- Floating Background Bubbles -->
+       <div class="absolute inset-0 z-0 pointer-events-none">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+        <p class="mb-8">
+          Stay updated with the latest news and opportunities from Her Power Project.
+        </p>
+        <form action="#">
+          <input type="email" placeholder="Enter your email" class="p-3 rounded-lg text-black w-1/2">
+          <button type="submit" class="bg-pink-600 hover:bg-pink-500 text-white py-3 px-8 rounded-lg">Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Portfolio/Project Showcase Section -->
+    <section id="portfolio" class="relative py-16 mx-4 lg:mx-16 bg-gray-900 text-white">
+      <!-- Floating Background Bubbles -->
+      <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-4xl font-bold text-center mb-12">Our Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Bike Project -->
+          <a href="https://farihaislamm.github.io/daisyUi-project/" class="project-card">
+            <div class="bg-gray-800 p-6 rounded-lg transition-transform transform hover:scale-105">
+              <img src="./images/Bike project.png" alt="Project 1" class="mb-4 h-80 items-center mx-auto">
+              <h3 class="text-2xl font-bold mb-2">Bike Project</h3>
+              <p class="text-gray-400">A brief description of the project that showcases the work done.</p>
+            </div>
+          </a>
+          <!-- Tailwind Css Project -->
+          <a href="https://farihaislamm.github.io/Tailwind-css-project/" class="project-card">
+            <div class="bg-gray-800 p-6 rounded-lg transition-transform transform hover:scale-105">
+              <img src="./images/tailwind css project.png" alt="Project 2" class="mb-4 h-80 mx-auto items-center">
+              <h3 class="text-2xl font-bold mb-2">Tailwind Css Project</h3>
+              <p class="text-gray-400">Another description of a different project done through the initiative.</p>
+            </div>
+          </a>
+          <!-- Restaurant Project -->
+          <a href="https://farihaislamm.github.io/Resturent-Website/" class="project-card">
+            <div class="bg-gray-800 p-6 rounded-lg transition-transform transform hover:scale-105">
+              <img src="./images/Resturent project.png" alt="Project 3" class="mb-4 h-80 mx-auto items-center">
+              <h3 class="text-2xl font-bold mb-2">Restaurant Project</h3>
+              <p class="text-gray-400">Highlighting some notable achievements or results.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="slider" class="slider py-16 mx-16 relative overflow-hidden">
+      <h1 class="special-moments">Special Moments</h1>
+
+      <div class="slider-container">
+        <div class="slides">
+          <div class="slide fade h-[600px] w-[200px]">
+            <img src="./images/slider image (1).jpeg"alt="Slide 1" />
+            <div class="text">
+              <h2 class="text-black font-bold">Special Moments</h2>
+              <p class="text-black font-semibold">We are an Happy team</p>
+            </div>
+          </div>
+          <div class="slide fade h-[600px] w-[200px]">
+            <img src="./images/slider image (2).jpeg" alt="Slide 2" class="h-[120px]" />
+            <div class="text">
+              <h2 class="text-black font-bold">Special Moments</h2>
+              <p class="text-black font-semibold">We are an Happy team</p>
+            </div>
+          </div>
+          <div class="slide fade h-[600px] w-[200px]">
+            <img src="./images/slider image (3).jpeg" alt="Slide 3" class="h-[120px]" />
+            <div class="text">
+              <h2 class="text-black font-bold">Special Moments</h2>
+              <p class="text-black font-semibold">We are an Happy team</p>
+            </div>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+    <!-- call to action -->
+    <section class="relative bg-gradient-to-r from-purple-900 to-pink-600 mx-16 text-white py-20">
+      <!-- Floating Background Bubbles -->
+      <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      <div class="container mx-auto text-center relative z-10">
+        <h2 class="text-4xl font-bold mb-6">Join the Movement</h2>
+        <p class="text-lg mb-8">Help us empower more women. Your contribution can make a difference.</p>
+        <a href="#contact" class="bg-white text-purple-600 py-3 px-8 rounded-full transition-transform transform hover:scale-105">Get Involved</a>
+      </div>
+    </section>
+  
+    
+    <style>
+      .slider {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+    
+      .slider-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+      }
+    
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+    
+      .slide {
+        min-width: 100%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+    
+      .slide img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    
+      .text {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        color: white;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+      }
+    
+      .text h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+    
+      .text p {
+        font-size: 1.2rem;
+      }
+    
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 3px;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    
+      .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    
+      .prev {
+        left: 10px;
+        transform: translateY(-50%);
+      }
+    
+      .next {
+        right: 10px;
+        transform: translateY(-50%);
+      }
+    </style>
+    
+    <script>
+      let slideIndex = 0;
+      showSlides(slideIndex);
+    
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+    
+      function showSlides(n) {
+        const slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) { slideIndex = 0; }
+        if (n < 0) { slideIndex = slides.length - 1; }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "flex";
+      }
+    </script>
+    
+
+    
+    <!-- footer -->
+    <footer id="contact" class="bg-black py-8 mx-16 text-white">
+      <div class="container mx-auto text-center">
+        <p class="mb-4">&copy; 2024 Her Power Project. All rights reserved.</p>
+        <div class="space-x-4">
+          <a href="#" class="text-white hover:text-gray-400">Facebook</a>
+          <a href="#" class="text-white hover:text-gray-400">Instagram</a>
+          <a href="#" class="text-white hover:text-gray-400">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+    <script src='https://cdn.jsdelivr.net/gh/leimapapa/vectorfetti/vectorfettiBeta.min.js'></script>
+    <script src="./script.js"></script>
+    </body>
+</html>
