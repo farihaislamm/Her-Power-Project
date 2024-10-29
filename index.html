@@ -10,6 +10,14 @@
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+      type='text/css'
+  >
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
 
@@ -668,37 +676,20 @@
         </div>
       </div>
     </section>
-    <section id="slider" class="slider py-16 mx-16 relative overflow-hidden">
-      <h1 class="special-moments">Special Moments</h1>
-
-      <div class="slider-container">
-        <div class="slides">
-          <div class="slide fade h-[600px] w-[200px]">
-            <img src="./images/slider image (1).jpeg"alt="Slide 1" />
-            <div class="text">
-              <h2 class="text-black font-bold">Special Moments</h2>
-              <p class="text-black font-semibold">We are an Happy team</p>
-            </div>
-          </div>
-          <div class="slide fade h-[600px] w-[200px]">
-            <img src="./images/slider image (2).jpeg" alt="Slide 2" class="h-[120px]" />
-            <div class="text">
-              <h2 class="text-black font-bold">Special Moments</h2>
-              <p class="text-black font-semibold">We are an Happy team</p>
-            </div>
-          </div>
-          <div class="slide fade h-[600px] w-[200px]">
-            <img src="./images/slider image (3).jpeg" alt="Slide 3" class="h-[120px]" />
-            <div class="text">
-              <h2 class="text-black font-bold">Special Moments</h2>
-              <p class="text-black font-semibold">We are an Happy team</p>
-            </div>
-          </div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-    </section>
+<!-- Beautiful Moments -->
+  <section class="grid-image">
+    <h1 class="design">Beautiful Moments</h1>
+    <article class="gallery">
+      <img src="./images/enjoy time (1).jpeg"/>
+      <img src="./images/enjoy time (2).jpeg"/>
+      <img src="./images/enjoy time (3).jpeg"/>
+      <img src="./images/enjoy time (4).jpeg"/>
+      <img src="./images/enjoy time (1).jpeg"/>
+      <img src="./images/enjoy time (2).jpeg"/>
+      <img src="./images/enjoy time (3).jpeg"/>
+      <img src="./images/enjoy time (4).jpeg"/>
+    </article>
+  </section>
     <!-- call to action -->
     <section class="relative bg-gradient-to-r from-purple-900 to-pink-600 mx-16 text-white py-20">
       <!-- Floating Background Bubbles -->
@@ -715,107 +706,6 @@
         <a href="#contact" class="bg-white text-purple-600 py-3 px-8 rounded-full transition-transform transform hover:scale-105">Get Involved</a>
       </div>
     </section>
-  
-    
-    <style>
-      .slider {
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        border-radius: 10px;
-      }
-    
-      .slider-container {
-        position: relative;
-        max-width: 100%;
-        margin: auto;
-      }
-    
-      .slides {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-      }
-    
-      .slide {
-        min-width: 100%;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        position: relative;
-      }
-    
-      .slide img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    
-      .text {
-        position: absolute;
-        bottom: 30px;
-        left: 20px;
-        color: white;
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-      }
-    
-      .text h2 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-      }
-    
-      .text p {
-        font-size: 1.2rem;
-      }
-    
-      .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 3px;
-        user-select: none;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-    
-      .prev:hover, .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-    
-      .prev {
-        left: 10px;
-        transform: translateY(-50%);
-      }
-    
-      .next {
-        right: 10px;
-        transform: translateY(-50%);
-      }
-    </style>
-    
-    <script>
-      let slideIndex = 0;
-      showSlides(slideIndex);
-    
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-    
-      function showSlides(n) {
-        const slides = document.getElementsByClassName("slide");
-        if (n >= slides.length) { slideIndex = 0; }
-        if (n < 0) { slideIndex = slides.length - 1; }
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex].style.display = "flex";
-      }
-    </script>
-    
-
-    
     <!-- footer -->
     <footer id="contact" class="bg-black py-8 mx-16 text-white">
       <div class="container mx-auto text-center">
