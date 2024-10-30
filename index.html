@@ -5,28 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Her Power Project Bangladesh</title>
+  <!-- Tailwind Css -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- Box-icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- Daisyui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-      type='text/css'
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type='text/css'>
+  <!-- Jquery -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
-
-
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Css -->
   <link rel="stylesheet" href="./style.css">
   </head>
 <body>
-  
     <!-- navigation bar -->
     <header class="bg-gray-900 mx-16 text-white shadow-md z-[1000] top-0 sticky">
       <div class="container mx-auto flex items-center justify-between py-4 px-6">
@@ -66,42 +61,6 @@
         </nav>
       </div>
     </header>
-    <!-- side menu -->
-    <!-- <section class="side-menu ">
-      <ul class="block bg-transparent bg-none mt-16 fixed z-50">
-        <li style="--clr:#2483ff;">
-          <a href="#home">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
-          </a>
-        </li>
-        <li style="--clr:#fff200;">
-          <a href="#contact">
-            <i class="fa-solid fa-user"></i>
-            <span>Contact</span>
-          </a>
-        </li>
-        <li style="--clr:#ff253f;">
-          <a href="#about">
-            <i class='bx bxs-info-circle'></i>
-            <span>About</span>
-          </a>
-        </li>
-        <li style="--clr:#25d366;">
-          <a href="#service">
-            <i class='bx bxs-wrench'></i>
-            <span>Service</span>
-          </a>
-        </li>
-        <li style="--clr:#f32ec8;">
-          <a href="#">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <span>Search</span>
-          </a>
-        </li>
-      </ul>
-    </section> -->
-    <!-- Hero area section -->
     <section class="home mx-16 bg-gradient-to-b from-gray-900 to-black text-white py-20 relative overflow-hidden" id="home">
       <!-- Background Animation -->
       <div class="absolute inset-0 bg-opacity-25 bg-[url('https://example.com/path-to-image.jpg')] bg-cover bg-center z-0"></div>
@@ -193,7 +152,6 @@
         }
       </style>
     </section>
-    
     <!-- service section -->
     <section id="service" class="service py-16 mx-16 bg-gradient-to-b from-black to-gray-900 text-white relative overflow-hidden">
       <div class="container mx-auto px-6 relative z-10">
@@ -266,7 +224,6 @@
         }
       </style>
     </section>
-    
     <section id="about" class="animated-background py-20 mx-16 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden">
     
       <div class="container mx-auto text-center relative z-10">
@@ -370,6 +327,61 @@
         </div>
       </div>
     </section>
+<!-- feature section -->
+    <section class="section-wrapper mx-16">
+      <h1 class="text-center font-bold  font-serif text-[40px]">Features</h1>
+      <hr class="w-40 font-bold  items-center mx-auto">
+      <div class="section-row">
+        <div class="section-block">
+          <div class="shape">
+            <span class="shape-before"></span>
+              <div class="img-wrap">
+                <img src="images/apple-logo.svg" alt="">
+              </div>
+                <span class="shape-after"></span>
+          </div>
+          <div class="section-content">
+            <h2>Design</h2>
+            <p>Aenean vulputate eleifend tellus. Aenean leo ligula,
+            porttitor eu, consequat vitae</p>
+          </div>
+        </div>
+        <div class="section-block">
+          <div class="shape">
+            <span class="shape-before"></span>
+              <div class="img-wrap">
+                <img src="images/book.svg" alt="">
+              </div>
+                <span class="shape-after"></span>
+          </div>
+          <div class="section-content">
+            <h2>Development</h2>
+            <p>Aenean vulputate eleifend tellus. Aenean leo ligula,
+            porttitor eu, consequat vitae</p>
+          </div>
+        </div>
+      <div class="section-block">
+        <div class="shape">
+          <span class="shape-before"></span>
+            <div class="img-wrap">
+              <img src="images/briefcase.svg" alt="">
+            </div>
+              <span class="shape-after"></span>
+        </div>
+        <div class="section-content">
+          <h2>Research</h2>
+          <p>Aenean vulputate eleifend tellus. Aenean leo ligula,
+          porttitor eu, consequat vitae</p>
+        </div>    
+      </div>
+    </div>
+    </section>
+<!-- Text animation -->
+    <section class="mx-16">
+      <div class="text-container">
+        <span class="moving-text font-bold">"Empowering Women to Rise, Lead, and Transform Their World"</span>
+      </div>
+    </section>
     <!-- testimonial and success section -->
     <section class="py-16 mx-16 bg-[#111111] relative overflow-hidden">
       
@@ -442,10 +454,7 @@
           </div>
         </div>
       </div>
-    </section>
-    
-
-    
+    </section> 
     <!-- Memorable Moments Section -->
     <section class="bg-gray-800 mx-8 lg:mx-16 text-white py-12 px-6 rounded-lg shadow-lg">
       <div class="text-center mb-12">
@@ -501,7 +510,6 @@
         </p>
       </div>
     </section>
-    
     <!-- faq section -->
     <section id="faq" class="py-16 bg-gray-900 text-white mx-4 lg:mx-16 rounded-lg shadow-lg">
        <!-- Floating Background Bubbles -->
@@ -548,7 +556,6 @@
         </div>
       </div>
     </section>
-    
     <!-- partnar section -->
     <section id="partners" class="py-16 bg-gray-900 mx-16 text-white relative overflow-hidden">
       <!-- Floating Background Bubbles -->
@@ -615,7 +622,6 @@
         }
       </style>
     </section>
-    
     <!-- Newsletter Subscription Section -->
     <section id="newsletter" class="py-16 mx-16 bg-gradient-to-b from-gray-800 to-black text-white">
        <!-- Floating Background Bubbles -->
@@ -684,10 +690,10 @@
       <img src="./images/enjoy time (2).jpeg"/>
       <img src="./images/enjoy time (3).jpeg"/>
       <img src="./images/enjoy time (4).jpeg"/>
-      <img src="./images/enjoy time (1).jpeg"/>
-      <img src="./images/enjoy time (2).jpeg"/>
-      <img src="./images/enjoy time (3).jpeg"/>
-      <img src="./images/enjoy time (4).jpeg"/>
+      <img src="./images/enjoy time (5).jpeg"/>
+      <img src="./images/enjoy time (6).jpeg"/>
+      <img src="./images/enjoy time (7).jpeg"/>
+      <img src="./images/enjoy time (8).jpeg"/>
     </article>
   </section>
     <!-- call to action -->
